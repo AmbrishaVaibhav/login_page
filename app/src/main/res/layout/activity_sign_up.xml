@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="visible"
+       android:background="@drawable/graditent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="20dp"
+           android:orientation="vertical"
+           android:gravity="center"
+         android:layout_marginTop="20dp"
+           android:id="@+id/head">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Vaibhav Electrodes"
+               android:id="@+id/p1"
+               android:textSize="30dp"
+               android:textStyle="bold"
+               android:textColor="@color/purple_500"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:text="Trusted and tested, Top quality welding rod"
+               android:textSize="17dp"
+               android:textStyle="bold"
+               >
+
+           </TextView>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_below="@+id/head"
+
+           android:id="@+id/buton"
+           android:orientation="vertical">
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Login using google"
+               android:textAllCaps="false"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="5dp"
+               android:layout_marginLeft="10dp"
+               android:id="@+id/signindgoogle"
+               />
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/buton"
+           android:id="@+id/line">
+
+
+           <View
+               android:layout_width="150dp"
+               android:layout_height="1dp"
+               android:background="@color/black"
+               android:layout_marginLeft="20dp"
+               android:layout_gravity="center"
+
+               />
+           <Space
+               android:layout_width="20dp"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Or"
+               android:textSize="20dp"
+               />
+           <Space
+               android:layout_width="20dp"
+               android:layout_height="wrap_content"/>
+           <View
+               android:layout_width="150dp"
+               android:layout_height="1dp"
+               android:background="@color/black"
+               android:layout_marginRight="20dp"
+               android:layout_gravity="center"
+               />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/box"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:orientation="vertical"
+           android:padding="20dp">
+
+           <EditText
+               android:id="@+id/num"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/border"
+               android:hint="Mobile number/email"
+               android:padding="5dp"
+               android:textColorHint="#808080" />
+
+           <EditText
+               android:id="@+id/name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/border"
+               android:hint="Full name"
+               android:padding="5dp"
+               android:textColorHint="#808080" />
+
+           <EditText
+               android:id="@+id/user"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/border"
+               android:hint="User id"
+               android:padding="5dp"
+               android:textColorHint="#808080" />
+
+           <EditText
+               android:id="@+id/password"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/border"
+               android:hint="Password"
+               android:inputType="textPassword"
+               android:padding="5dp"
+               android:textColorHint="#808080" />
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="20dp"
+           android:layout_below="@id/box"
+           android:orientation="vertical"
+           android:id="@+id/learnmore"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:gravity="center">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="People who use our service may have uploaded your contact information to vaibhav electrodes"
+              android:textAlignment="center"
+               android:layout_marginBottom="5dp"
+               android:textSize="15dp"
+              />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="By signing up you agree to our terms, Privacy Policy, and Cookie Policy"
+               android:textAlignment="center"
+               android:layout_marginTop="5dp"
+               android:textSize="15dp"/>
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sign up"
+               android:textAllCaps="false"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="5dp"
+               android:layout_marginLeft="10dp"
+               />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Have an account? Login"
+                   android:textSize="17dp"
+                   android:textAlignment="center"
+                   android:background="@drawable/border"/>
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
